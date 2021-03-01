@@ -15,7 +15,14 @@
   
 */
 
-function colonisers() {}
+function colonisers(voyagerArr) {
+  const startsWithA = [];
+  voyagerArr.forEach((family) => {
+    if (family.startsWith('A') && family.includes('family')) startsWithA.push(family);
+      
+  });
+  return startsWithA;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

@@ -11,7 +11,9 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
+function safeLevels(oxygenLevels) {
+  return oxygenLevels.find((num) => num.replace('%', '') > 19.5 && num.replace('%', '') < 23.5);
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
